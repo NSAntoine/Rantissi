@@ -7,19 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE22C0DE2A724B5C000DB060 /* VolumeObserverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE22C0DD2A724B5C000DB060 /* VolumeObserverView.swift */; };
 		CE79C6912A71B28E002BE3FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE79C6902A71B28E002BE3FF /* AppDelegate.swift */; };
-		CE79C6932A71B28E002BE3FF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE79C6922A71B28E002BE3FF /* ViewController.swift */; };
 		CE79C6952A71B28F002BE3FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE79C6942A71B28F002BE3FF /* Assets.xcassets */; };
-		CE79C6982A71B28F002BE3FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE79C6962A71B28F002BE3FF /* Main.storyboard */; };
+		CE79C6A02A71B2C8002BE3FF /* VolumeChangingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE79C69F2A71B2C8002BE3FF /* VolumeChangingViewController.swift */; };
+		CE79C6A22A71B2EA002BE3FF /* WindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE79C6A12A71B2EA002BE3FF /* WindowController.swift */; };
+		CE79C6A42A71B627002BE3FF /* EventsMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE79C6A32A71B627002BE3FF /* EventsMonitor.swift */; };
+		CE860E502A7271AE0022036B /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE860E4F2A7271AE0022036B /* Preferences.swift */; };
+		CEC7FF0C2A71BDC600F22E45 /* Sound.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC7FF0B2A71BDC600F22E45 /* Sound.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE22C0DD2A724B5C000DB060 /* VolumeObserverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeObserverView.swift; sourceTree = "<group>"; };
 		CE79C68D2A71B28E002BE3FF /* Rantissi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rantissi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE79C6902A71B28E002BE3FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CE79C6922A71B28E002BE3FF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CE79C6942A71B28F002BE3FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		CE79C6972A71B28F002BE3FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		CE79C6992A71B28F002BE3FF /* Rantissi.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Rantissi.entitlements; sourceTree = "<group>"; };
+		CE79C69F2A71B2C8002BE3FF /* VolumeChangingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeChangingViewController.swift; sourceTree = "<group>"; };
+		CE79C6A12A71B2EA002BE3FF /* WindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowController.swift; sourceTree = "<group>"; };
+		CE79C6A32A71B627002BE3FF /* EventsMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsMonitor.swift; sourceTree = "<group>"; };
+		CE860E4F2A7271AE0022036B /* Preferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preferences.swift; sourceTree = "<group>"; };
+		CEC7FF0B2A71BDC600F22E45 /* Sound.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sound.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,13 +59,32 @@
 		CE79C68F2A71B28E002BE3FF /* Rantissi */ = {
 			isa = PBXGroup;
 			children = (
-				CE79C6902A71B28E002BE3FF /* AppDelegate.swift */,
-				CE79C6922A71B28E002BE3FF /* ViewController.swift */,
+				CE860E4E2A7271970022036B /* App */,
+				CE860E4D2A7271870022036B /* UI */,
 				CE79C6942A71B28F002BE3FF /* Assets.xcassets */,
-				CE79C6962A71B28F002BE3FF /* Main.storyboard */,
-				CE79C6992A71B28F002BE3FF /* Rantissi.entitlements */,
 			);
 			path = Rantissi;
+			sourceTree = "<group>";
+		};
+		CE860E4D2A7271870022036B /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				CE79C69F2A71B2C8002BE3FF /* VolumeChangingViewController.swift */,
+				CE22C0DD2A724B5C000DB060 /* VolumeObserverView.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		CE860E4E2A7271970022036B /* App */ = {
+			isa = PBXGroup;
+			children = (
+				CE79C6902A71B28E002BE3FF /* AppDelegate.swift */,
+				CE79C6A12A71B2EA002BE3FF /* WindowController.swift */,
+				CE79C6A32A71B627002BE3FF /* EventsMonitor.swift */,
+				CE860E4F2A7271AE0022036B /* Preferences.swift */,
+				CEC7FF0B2A71BDC600F22E45 /* Sound.swift */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -93,6 +119,7 @@
 				TargetAttributes = {
 					CE79C68C2A71B28E002BE3FF = {
 						CreatedOnToolsVersion = 15.0;
+						LastSwiftMigration = 1500;
 					};
 				};
 			};
@@ -120,7 +147,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE79C6952A71B28F002BE3FF /* Assets.xcassets in Resources */,
-				CE79C6982A71B28F002BE3FF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,23 +157,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE79C6932A71B28E002BE3FF /* ViewController.swift in Sources */,
+				CEC7FF0C2A71BDC600F22E45 /* Sound.swift in Sources */,
+				CE860E502A7271AE0022036B /* Preferences.swift in Sources */,
+				CE79C6A22A71B2EA002BE3FF /* WindowController.swift in Sources */,
+				CE79C6A02A71B2C8002BE3FF /* VolumeChangingViewController.swift in Sources */,
+				CE22C0DE2A724B5C000DB060 /* VolumeObserverView.swift in Sources */,
 				CE79C6912A71B28E002BE3FF /* AppDelegate.swift in Sources */,
+				CE79C6A42A71B627002BE3FF /* EventsMonitor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		CE79C6962A71B28F002BE3FF /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CE79C6972A71B28F002BE3FF /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		CE79C69A2A71B28F002BE3FF /* Debug */ = {
@@ -273,13 +293,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = Rantissi/Rantissi.entitlements;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = L9735M962H;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_NSAppleEventsUsageDescription = "To stop scrolling events from other apps";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
@@ -287,10 +309,13 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14.4;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.serena.Rantissi;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.serena.rivers.in.the.desert;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -300,13 +325,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = Rantissi/Rantissi.entitlements;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = L9735M962H;
 				ENABLE_HARDENED_RUNTIME = YES;
+				GCC_OPTIMIZATION_LEVEL = s;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSUIElement = YES;
+				INFOPLIST_KEY_NSAppleEventsUsageDescription = "To stop scrolling events from other apps";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
@@ -314,8 +342,10 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14.4;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.serena.Rantissi;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.serena.rivers.in.the.desert;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
